@@ -1,0 +1,151 @@
+
+.container{
+    display: flex;
+     animation-name: imgs;
+     animation-duration:  25s;
+     animation-timing-function: linear;
+     animation-direction:normal;
+     animation-iteration-count: infinite;
+     /* border: 20px solid black;  */
+                   
+}
+body{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+@keyframes imgs {
+   0%{
+       margin-left: 0%;
+   
+   }
+   100%{
+       margin-left: -500%;
+   
+   }
+}
+.bg-img{
+   height: 98vh;
+   width: 100%;
+}
+
+/* hero */
+.dumpy{
+   height: 130px;
+   width: 150px;
+   position: absolute;
+   bottom: 9%;
+   left: 4%;
+   
+
+}
+.jumpdumpy{
+    animation-name: jump;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+}
+
+
+@keyframes jump {
+   0%{
+   bottom: 9%;
+   /* left: 4%; */
+   }
+   50%{
+       bottom: 44%;
+   }
+   100%{
+       bottom: 9%;
+   }
+}
+
+.villian , .villian1 {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 9%;
+    right: -9%;   
+    display: none;
+}
+.villian2{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    bottom: 2%;
+    right: -9%;  
+    display: none;
+}
+.villianrun{
+    animation-name: run;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+}
+@keyframes run{
+    0%{
+    right: -7%;
+    }
+    100%{
+        right: 100%;
+    }
+ }
+
+.villianrun1{
+    animation-name: run1;
+     animation-duration: 3s; 
+    animation-timing-function: linear;
+    
+}
+@keyframes run1{
+    0%{
+    
+    right: -7%;
+    }
+    100%{
+        
+        right: 100%;
+    }
+ }
+
+.villianrun2{
+    animation-name: run2;
+     animation-duration: 3s; 
+    animation-timing-function: linear;
+    
+}
+@keyframes run2{
+    0%{
+    
+    right: -7%;
+    }
+    100%{
+        
+        right: 100%;
+    }
+ }
+
+.scorecard{
+    border-radius: 20px;
+    position: absolute;
+    top: 1%;
+    right: 79%;
+    /* border: 2px solid red; */
+    height: 100px;
+    width: 300px;
+    /* background-color: lightgrey; */
+    font-size: 40px;
+}
+.score{
+    color: green;
+}
+.gameover{
+    /* border: 2px solid black; */
+    height: 200px;
+    width: 700px;
+    position: absolute;
+    top: 30%;
+    right: 29%;
+    font-size: 150px;
+    color: red;
+    display: none;
+}
